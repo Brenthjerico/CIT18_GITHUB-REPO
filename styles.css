@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav {
+    display: flex;
+    background-color: skyblue;
+    height: 10vh;
+    width: 100vw;
+    text-align: start;
+    position: fixed;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 30px;
+}
+
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#aboutMe {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+#aboutMe div {
+    background-color: skyblue;
+    width: 50vw;
+    height: auto;
+}
+
+#aboutMe img {
+    background-color: skyblue;
+    width: 40vw;
+    height: auto;
+}
+
+#education {
+    width: 100vw;
+    height: 50vh;
+
+}
+
+#experience {
+    width: 100vw;
+    height: 50vh;
+}
+
+#skills {
+    width: 100vw;
+    height: 50vh;
+}
+
+#projects {
+    width: 120vw;
+    height: 120vh;
+}
+
+#contacts {
+    width: 100vw;
+    height: 50vh;
+}
