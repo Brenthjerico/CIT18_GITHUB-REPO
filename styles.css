@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -29,18 +30,14 @@ header nav a {
     padding: 30px;
 }
 
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 #aboutMe {
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX8ai15MZeB3MhbzriY-6S0e9fz_-xH5gOQ4fiVPq5WuwJnZIzb3aCd0Uxq_ZKW9YO9ZM&usqp=CAU);
+    background-size: cover;
 }
 
 
