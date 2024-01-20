@@ -3,78 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden; /* Disable horizontal scrolling */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: #666;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: #fff;
+            padding: 5px 10px;
+        }
+
+        header a:hover {
+            background-color: #555;
+        }
+
+        header nav {
+            position: relative;
+            right: 0;
+            top: 0;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style-type: none;
+            padding: 0;
+            transition: none;
+        }
+
+        nav ul.show {
+            height: auto;
+        }
+
+        nav ul li {
+            padding: 5px 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .full-height {
+            height: 60vh; /* Full viewport height */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+        }
+
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+            /* Adjust positioning */
+            position: absolute;
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
-    <body>
-        <header>
-            <nav>
-                <a href="#aboutMe">About Me</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contacts">Contacts</a> 
-            </nav>
-        </header>
-        <main>
-            <section id="aboutMe">
-                <div>
-                    <h2 id="name">Brenth Jerico O. Baldiviso</h2>
-                <p>I thrive on taking on your toughest web development challenges and finding creative, efficient solutions that exceed expectations.</p>
-                </div>
-                <img src="" alt="My Img">
-            </section>
+<body>
+    <!-- Header section with name and role -->
+    <header>
+        <nav>
+            <ul class="nav-links show">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+    </header>
 
-            <section id="education">
-                
-                    <h2>Education</h2>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-        
-            </section>
+    <!-- Profile section with contact details -->
+    <div id="about" class="full-height section">
+        <div class="profile-picture">
+            <img src="Profile.jpeg" alt="Profile Picture">
+        </div>
+        <h1>Hi there,<br> <span>Im Brenth Jerico Baldiviso</span></h1>
+            <p>A Web Developer</p>
+            <img src="Profile.jpeg" alt="Profile Picture" class="profile-picture">
+    </div>
 
-            <section id="experience">
-                <h2>Experience</h2>
-                <p>Placeholder for your professional experience and accomplishments.</p>
-            </section>
-    
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li> Video & Photo Editing</li>
-                    <li>Communication Skills</li>
-                    <li>Coding in HTML, CSS, C#, Javascript, Mysql, Java, Python</li>
-                    <li>Wordpress, Wpf</li>
-                </ul>
-            </section>
-    
-            <section id="projects">
-                <h2>Projects</h2>
-                <div>
-                    
-                </div>
-            </section>
-    
-            
-        </main>
 
-        <footer>
-            <section id="contacts">
-                <h2>Contact Information</h2>
-                <ul>
-                    <li>Bjaybaldiviso@gmail.com</li>
-                    <li>Facebook</li>
-                    <li>09098118823</li>
-                </ul>
-            </section>
-        </footer>
+    <!-- About Me section with profile picture and description -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I'm passionate web developer with a keen interest in creating engaging and user-friendly websites. I love to explore new technologies and apply them to solve real-world problems. My journey in web development has equipped me with a diverse skill set and a commitment to continuous learning.
+    </p>
+</section>
 
-        <script src="script.js"></script>
-    </body>
+<!-- Education section -->
+<div id="education" class="full-height section">
+    <h2>Education</h2>
+    <p>
+        I'm currently persuing my Bachelor's degree in Information Technology at University Of The Cordillera, where I gain a foundation in Information Technology principles and my programming skills.
+    </p>
+</div>
+
+
+<!-- Experience section -->
+<div id="experience" class="full-height section">
+    <h2>Experience</h2>
+    <p>
+        I have practical experience on web development projects during my recent semesters. My roles involved mostly on front-end and less in back-end development, ensuring responsive and scalable solutions. I can say I'm slightly familiar with technologies such as HTML, CSS, JavaScript.
+    </p>
+</div>
+
+<!-- Skills section -->
+<div id="skills" class="full-height section">
+    <h2>Skills</h2>
+    <ul>
+        <li> Video & Photo Editing</li>
+        <li>Communication Skills</li>
+        <li>Coding in HTML, CSS, C#, Javascript, Mysql, Java, Python</li>
+        <li>Wordpress, Wpf</li>
+    </ul>
+</div>
+
+
+    <!-- Projects section -->
+    <div id="projects" class="full-height section">
+        <h2>Projects</h2>
+        <p>This is my <a href="https://github.com/Brenthjerico" target="_blank" rel="noopener noreferrer" style="color: blue;">Github</a><span></span> <span>link</span>, feel free to view my Projects. </p>
+    </div>
+
+    <!-- Contact Information section -->
+    <div id="contacts" class="full-height section">
+        <h2>Contact Information</h2>
+        <ul>
+            <li><strong>Email:</strong> bjaybaldiviso@gmail.com</li>
+            <li><strong>Phone:</strong> +63 909 811 8823</li>
+            <li><strong>Facebook:</strong> <a href="https://www.facebook.com/brenthjericobaldiviso?mibextid=kFxxJD" target="_blank" rel="noopener noreferrer" style="color: blue;">Brenth Jerico Baldiviso</a></li>
+        </ul>
+    </div
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Brenth Jerico</p>
+    </footer>
+</body>
 </html>
